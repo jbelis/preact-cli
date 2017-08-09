@@ -3,6 +3,7 @@
 /examples/*/build
 /tests/output
 .DS_Store
+.idea
 npm-debug.log
 key.pem
 cert.pem

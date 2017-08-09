@@ -31,7 +31,7 @@ export default env => {
 		}),
 		setOutput({
 			path: env.dest,
-			publicPath: '/',
+			publicPath: '',
 			filename: isProd ? "[name].[chunkhash:5].js" : "[name].js",
 			chunkFilename: '[name].chunk.[chunkhash:5].js',
 		}),
@@ -125,7 +125,7 @@ const development = config => {
 			hot: true,
 			https: config.https,
 			compress: true,
-			publicPath: '/',
+			publicPath: '',
 			contentBase: resolve(config.cwd, config.src || './src'),
 			// setup(app) {
 			// 	app.use(middleware);
