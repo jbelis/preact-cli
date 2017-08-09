@@ -31,7 +31,7 @@ export default env => {
 		}),
 		setOutput({
 			path: env.dest,
-			publicPath: '/',
+			publicPath: '',
 			filename: isProd ? "[name].[chunkhash:5].js" : "[name].js",
 			chunkFilename: '[name].chunk.[chunkhash:5].js',
 		}),

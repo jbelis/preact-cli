@@ -13,7 +13,7 @@ export default (env) => {
 		entryPoint(resolve(env.cwd, env.src || 'src', 'index.js')),
 		setOutput({
 			path: resolve(env.dest, 'ssr-build'),
-			publicPath: '/',
+			publicPath: '',
 			filename: 'ssr-bundle.js',
 			chunkFilename: '[name].chunk.[chunkhash:5].js',
 			libraryTarget: 'commonjs2'
